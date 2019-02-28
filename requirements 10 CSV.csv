@@ -1,0 +1,13 @@
+req no;Description
+1;Important messages should be marked with star symbol
+2;the user should easily create a new letter
+3;letter text should be edited in the new message window
+4;images must be attached to the letter
+5;links should be attached to the letter
+6;the letter should be added to drafts
+7;letters must be sorted by importance
+8;letters must be added to categories
+9;the letter should be added to spam
+10;All letters must be highlighted with one button
+11;Read letters should be marked with a different color
+12;Letters must be deleted in the trash
