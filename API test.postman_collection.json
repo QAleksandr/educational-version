@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "6d629d6e-aeff-4455-b237-1af53093ff4b",
+		"name": "API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=bitcoin&apiKey=ac74e03791c54faba82720f1a5b474d1&from=2019-03-02&to=2019-03-01",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "apiKey",
+							"value": "ac74e03791c54faba82720f1a5b474d1"
+						},
+						{
+							"key": "from",
+							"value": "2019-03-02"
+						},
+						{
+							"key": "to",
+							"value": "2019-03-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://www.bespaliy.com",
+						"type": "text"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://www.bespaliy.com/wp-comments-post.php?ak_js=1551537777399d&akismet_comment_nonce=7e194c9e60&author=Алексей&comment=aga! vot ono&comment_parent=0&comment_post_ID=896&email=stufler29@gmail.com&submit=Отправить комментарий&url",
+					"protocol": "http",
+					"host": [
+						"www",
+						"bespaliy",
+						"com"
+					],
+					"path": [
+						"wp-comments-post.php"
+					],
+					"query": [
+						{
+							"key": "ak_js",
+							"value": "1551537777399d"
+						},
+						{
+							"key": "akismet_comment_nonce",
+							"value": "7e194c9e60"
+						},
+						{
+							"key": "author",
+							"value": "Алексей"
+						},
+						{
+							"key": "comment",
+							"value": "aga! vot ono"
+						},
+						{
+							"key": "comment_parent",
+							"value": "0"
+						},
+						{
+							"key": "comment_post_ID",
+							"value": "896"
+						},
+						{
+							"key": "email",
+							"value": "stufler29@gmail.com"
+						},
+						{
+							"key": "submit",
+							"value": "Отправить комментарий"
+						},
+						{
+							"key": "url",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://www.bespaliy.com/wp-admin/admin-ajax.php?action= delete-comment&id= 3757&_ajax_nonce= e05386492e&trash= 1&_total= 65&_per_page= 20&_page= 1&_url= http%3A%2F%2Fwww.bespaliy.com%2Fwp-admin%2Fedit-comments.php&comment_status= all",
+					"protocol": "http",
+					"host": [
+						"www",
+						"bespaliy",
+						"com"
+					],
+					"path": [
+						"wp-admin",
+						"admin-ajax.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": " delete-comment"
+						},
+						{
+							"key": "id",
+							"value": " 3757"
+						},
+						{
+							"key": "_ajax_nonce",
+							"value": " e05386492e"
+						},
+						{
+							"key": "trash",
+							"value": " 1"
+						},
+						{
+							"key": "_total",
+							"value": " 65"
+						},
+						{
+							"key": "_per_page",
+							"value": " 20"
+						},
+						{
+							"key": "_page",
+							"value": " 1"
+						},
+						{
+							"key": "_url",
+							"value": " http%3A%2F%2Fwww.bespaliy.com%2Fwp-admin%2Fedit-comments.php"
+						},
+						{
+							"key": "comment_status",
+							"value": " all"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
